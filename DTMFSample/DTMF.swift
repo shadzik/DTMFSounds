@@ -38,7 +38,7 @@ class DTMF {
         let gain: Float32 = 0.5
         let subChunkSize: Int32 = 16
         let format: Int16 = 1
-        let channels: Int16 = 1
+        let channels: Int16 = 2
         let bitsPerSample: Int16 = 16
         let byteRate: Int32 = sampleRate * Int32(channels * bitsPerSample / 8)
         let blockAlign: Int16 = channels * 2
