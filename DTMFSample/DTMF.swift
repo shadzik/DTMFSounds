@@ -34,7 +34,7 @@ class DTMF {
         let freq2 = freqValues[1]
 
         let sampleRate: Int32 = 44100
-        let duration: Int32 = 1
+        let duration: Int32 = 2
         let gain: Float32 = 0.5
         let subChunkSize: Int32 = 16
         let format: Int16 = 1
