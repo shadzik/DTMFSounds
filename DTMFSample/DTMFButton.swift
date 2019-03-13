@@ -34,9 +34,8 @@ class DTMFButton: UIButton {
     // MARK: Play DTMF
     
     private func play() {
-        let dtmf = DTMF()
         guard let title = currentTitle,
-            let tone = dtmf.dtmf(for: title) else {
+            let tone = DTMF.dtmf(for: title) else {
             return
         }
         

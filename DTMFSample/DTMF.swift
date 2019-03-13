@@ -9,7 +9,7 @@ import AVFoundation
 
 class DTMF {
     
-    private let dtmfFreqs: [String: [Float]] = {
+    static private let dtmfFreqs: [String: [Float]] = {
         ["0" : [ 941, 1336 ],
          "1" : [ 697, 1209 ],
          "2" : [ 697, 1336 ],
@@ -24,7 +24,7 @@ class DTMF {
          "#" : [ 941, 1477 ]]
     }()
     
-    func dtmf(for character: String) -> Data? {
+    static func dtmf(for character: String) -> Data? {
         
         guard let freqValues = dtmfFreqs[character] else {
                 return nil
